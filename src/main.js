@@ -9,9 +9,7 @@ Vue.config.productionTip = false;
 //console.log(Vue.version);
 /* eslint-disable no-new */
 new Vue({
-    el: '#app',
-    store,
-    router,
-    template: '<App/>',
-    components: { App }
-})
+  router,
+  store,
+  render: h => h(App)
+}).$mount('#app')
